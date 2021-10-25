@@ -1,6 +1,15 @@
 export const ChildArea = (props) => {
   const { open } = props;
-  console.log(open);
+  console.log("Chile areaがレンダリングされたよ");
 
-  return <div>{open ? <p> 子コンポーネント </p> : null}</div>;
+  const data = [...Array(2000).keys()];
+  data.forEach(() => {
+    console.log("...");
+  });
+
+  return (
+    <div style={{ backgroundColor: "yellow" }}>
+      {open ? <p> 子コンポーネント </p> : null}
+    </div>
+  );
 };
