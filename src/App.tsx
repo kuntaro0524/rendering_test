@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./styles.css";
+import { ChildArea } from "./ChildArea";
 
 export default function App() {
   console.log("App!");
@@ -11,10 +12,11 @@ export default function App() {
   };
   return (
     <div className="App">
-      <p> {count} </p>
-      <button onClick={pushClick}> count up </button>
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <input />
+      <br />
+      <br />
+      <button> PUSHME </button>
+      <ChildArea />
     </div>
   );
 }
