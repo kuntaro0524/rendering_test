@@ -5,14 +5,14 @@ import { ChildArea } from "./ChildArea";
 export default function App() {
   console.log("App!");
 
-  const [count, setCount] = useState(0);
+  const [text, setText] = useState("");
 
-  const pushClick = () => {
-    setCount(count + 1);
+  const onChangeText = (e) => {
+    setText(e.target.value);
   };
   return (
     <div className="App">
-      <input />
+      <input value={text} onChange={onChangeText} />
       <br />
       <br />
       <button> PUSHME </button>
