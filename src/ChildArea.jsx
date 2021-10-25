@@ -1,4 +1,6 @@
-export const ChildArea = (props) => {
+import { memo } from "react";
+
+export const ChildArea = memo((props) => {
   const { open } = props;
   console.log("Chile areaがレンダリングされたよ");
 
@@ -12,4 +14,4 @@ export const ChildArea = (props) => {
       {open ? <p> 子コンポーネント </p> : null}
     </div>
   );
-};
+});
