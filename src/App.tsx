@@ -24,7 +24,7 @@ export default function App() {
       <br />
       <br />
       <button onClick={onClickCheck}> PUSHME </button>
-      {open ? <ChildArea /> : null}
+      <ChildArea open={open} />
     </div>
   );
 }
